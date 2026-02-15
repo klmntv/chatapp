@@ -1,0 +1,39 @@
+.contactsTitle {
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.links {
+  margin-top: var(--space-3);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: rgba(0, 0, 0, 0.88);
+  text-decoration: none;
+  line-height: 1.2;
+  padding: 2px 0;
+}
+
+.linkDisabled {
+  color: rgba(0, 0, 0, 0.45);
+  cursor: default;
+  user-select: none;
+}
+
+.link:hover {
+  color: #0389cb;
+}
+
+.linkDisabled:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.link :global(svg) {
+  flex: 0 0 auto;
+  display: block;
+  overflow: visible;
+}

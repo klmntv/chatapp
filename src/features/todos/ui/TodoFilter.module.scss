@@ -1,0 +1,94 @@
+.menu {
+  width: 100%;
+}
+
+.menu :global(.ant-menu) {
+  border-inline-end: 0;
+  background: transparent;
+}
+
+.menu :global(.ant-menu-inline) {
+  border-inline-end: 0 !important;
+}
+
+.menu :global(.ant-menu-inline-collapsed) {
+  border-inline-end: 0 !important;
+}
+
+.menu :global(.ant-menu-inline .ant-menu-item::after) {
+  display: none;
+}
+
+.menu :global(.ant-menu-item) {
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: 12px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menu :global(.ant-menu-item-selected) {
+  border-radius: 12px;
+}
+
+.menu :global(.ant-menu-inline-collapsed) {
+  width: 100%;
+}
+
+.menu :global(.ant-menu-inline-collapsed),
+.menu :global(.ant-menu-inline-collapsed *) {
+  transition: none !important;
+  animation: none !important;
+}
+
+.menu :global(.ant-menu-inline-collapsed .ant-menu-item) {
+  padding-inline: 0 !important;
+  margin: 6px 8px;
+  width: auto;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 14px;
+}
+
+.menu :global(.ant-menu-inline-collapsed .ant-menu-item .ant-menu-item-icon) {
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu :global(.ant-menu-inline-collapsed .ant-menu-title-content) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.menu :global(.ant-menu-inline-collapsed > .ant-menu-item-selected) {
+  width: auto;
+}
+
+.itemLabel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.65;
+}

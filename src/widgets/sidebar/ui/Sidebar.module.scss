@@ -1,0 +1,116 @@
+.nav {
+  width: 280px;
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  border-right: 1px solid rgba(5, 5, 5, 0.08);
+  height: 100%;
+  overflow: hidden;
+  transition: width var(--dur-md) var(--ease-standard);
+}
+
+.navHeader {
+  padding: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.navHeaderCollapsed {
+  padding: var(--space-2);
+  justify-content: center;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.navToggle {
+  flex: 0 0 auto;
+}
+
+.navToggle:global(.ant-btn) {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navToggle:global(.ant-btn),
+.navToggle:global(.ant-btn:focus-visible),
+.navToggle:global(.ant-btn:focus),
+.navToggle:global(.ant-btn:active) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navToggle:global(.ant-btn)::after {
+  display: none !important;
+}
+
+.navMenu {
+  padding: 6px 8px 12px;
+}
+
+.navFooter {
+  margin-top: auto;
+  padding: 12px 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navHelp:global(.ant-btn) {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navHelp:global(.ant-btn),
+.navHelp:global(.ant-btn:focus-visible),
+.navHelp:global(.ant-btn:focus),
+.navHelp:global(.ant-btn:active) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navHelp:global(.ant-btn)::after {
+  display: none !important;
+}
+
+.collapsed {
+  width: 72px;
+  flex-basis: 72px;
+}
+
+.collapsed .navMenu {
+  padding: 6px 0 12px;
+}
+
+.collapsed .navFooter {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    width: 72px;
+    flex: 0 0 72px;
+    border-right: 1px solid rgba(5, 5, 5, 0.08);
+    border-bottom: 0;
+    height: 100%;
+  }
+
+  .collapsed {
+    width: 72px;
+    flex: 0 0 72px;
+  }
+}

@@ -1,0 +1,39 @@
+.form {
+  width: 100%;
+}
+
+.input:global(.ant-input-affix-wrapper-focused) {
+  box-shadow: none;
+}
+
+.input:global(.ant-input-affix-wrapper:focus-within) {
+  box-shadow: none;
+}
+
+.submit:global(.ant-btn) {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  line-height: 0;
+}
+
+.submit:global(.ant-btn:disabled) {
+  border: 0;
+  box-shadow: none;
+}
+
+.submit :global(.ant-btn-icon) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.submit :global(svg) {
+  display: block;
+}

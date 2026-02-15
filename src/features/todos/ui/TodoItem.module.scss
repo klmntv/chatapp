@@ -1,0 +1,34 @@
+.item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.title {
+  overflow-wrap: anywhere;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+}
+
+.itemActions :global(.ant-btn) {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemActions :global(.ant-btn .ant-btn-icon) {
+  display: inline-flex;
+}
