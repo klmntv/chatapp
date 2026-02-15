@@ -69,10 +69,15 @@ export function HelpModal({ open, onClose }: Props) {
           <Briefcase size={20} />
           <span>hh.ru</span>
         </a>
-        <div className={`${s.link} ${s.linkDisabled}`}>
+        <a
+          className={s.link}
+          href="https://github.com/klmntv/chatapp"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Link2 size={20} />
           <span>Репозиторий проекта</span>
-        </div>
+        </a>
       </div>
     </Modal>
   )
